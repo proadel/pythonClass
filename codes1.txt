@@ -1,0 +1,233 @@
+1=======forCHK==============
+C:\Users\urPC.path>python
+Python 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]
+Type "help", "copyright", "credits" or "license" for more information.
+>>>     -->pressENTER
+2===========================
+To Exit press : CTRL+Z
+>>> ^Z  --> pressENTER
+C:\Users\urPC.path>
+3=======forExt-libCHK=======
+C:\Users\urPC.path>pip freeze --> pressENTER
+4=======example1============
+C:\Users\urPC.path>pip freeze
+MouseInfo==0.1.3
+PyAutoGUI==0.9.53
+PyGetWindow==0.0.9
+PyMsgBox==1.0.9
+pyperclip==1.8.2
+PyRect==0.2.0
+PyScreeze==0.1.28
+pytweening==1.0.4
+
+C:\Users\urPC.path>
+=======endOf-example1======
+5=======example2============
+C:\Users\urPC.path>pip install pyAutoGUI 
+--> pressENTER
+toInstall #1 eXt.lib called pyAutoGUI
+... Downloading>>>>>... Finish.
+=======endOf-example2=======
+6=======forDownLoad&CHK==============
+C:\Users\urPC.path>pip install  ...
+[ENTERYOURLIBNAME] ... like see below
+C:\Users\urPC.path>pip install pyAutoGUI
+--> pressENTER 
+todaownload and see the status of lib.
+= any lib
+Requirement already satisfied: pyAutoGUI in 
+C:\Users\urPC.path\
+7========Install New lib====
+called pyQt5 : pip  install pyQt5
+C:\Users\urPC.path>pip  install pyQt5
+Collecting pyQt5
+Downloading PyQt5-5.15.7-cp37-abi3-win_amd64.whl (6.8 MB)
+--- 6.8/6.8 MB 174.0 kB/s eta 0:00:00
+Collecting PyQt5-sip<13,>=12.11
+Downloading PyQt5_sip-12.11.0-cp311-cp311-win_amd64.whl (78 kB)
+--- 78.3/78.3 kB 189.6 kB/s eta 0:00:00
+Collecting PyQt5-Qt5>=5.15.0
+Downloading PyQt5_Qt5-5.15.2-py3-none-win_amd64.whl (50.1 MB)
+--- 50.1/50.1 MB 208.8 kB/s eta 0:00:00
+Installing collected packages: PyQt5-Qt5, PyQt5-sip, pyQt5
+Successfully installed PyQt5-Qt5-5.15.2 PyQt5-sip-12.11.0 
+pyQt5-5.15.7
+
+C:\Users\urPC.path>pip  install pyQt5
+Requirement already satisfied: 
+pyQt5 in C:\Users\urPC.path>\appdata\local\programs\p
+ython\python311\lib\site-packages (5.15.7)
+Requirement already satisfied:
+PyQt5-sip<13,>=12.11 in C:\Users\urPC.path>\appdata\l
+ocal\programs\python\python311\lib\site-packages 
+(from pyQt5) (12.11.0)
+Requirement already satisfied:
+PyQt5-Qt5>=5.15.0 in c:\users\..\appdata\loca
+l\programs\python\python311\lib\site-packages
+(from pyQt5) (5.15.2)
+
+C:\Users\urPC.path 
+============================
+
+C:\Users\urPC.path>pip install py
+Collecting py
+Downloading py-1.11.0-py2.py3-none-any.whl (98 kB)
+--- 98.7/98.7 kB 115.6 kB/s eta 0:00:00
+Installing collected packages: py
+Successfully installed py-1.11.0
+============================
+
+C:\Users\urPC.path>pip install pipwin
+Collecting pipwin
+Downloading pipwin-0.5.2.tar.gz (7.9 kB)
+Preparing metadata (setup.py) ... done
+Collecting docopt
+Downloading docopt-0.6.2.tar.gz (25 kB)
+Preparing metadata (setup.py) ... done
+Collecting requests
+Downloading requests-2.28.1-py3-none-any.whl (62 kB)
+--- 62.8/62.8 kB 116.1 kB/s eta 0:00:00
+Collecting pyprind
+Downloading PyPrind-2.11.3-py2.py3-none-any.whl (8.4 kB)
+Collecting six
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting beautifulsoup4>=4.9.0
+Downloading beautifulsoup4-4.11.1-py3-none-any.whl (128 kB)
+--- 128.2/128.2 kB 188.7 kB/s eta 0:00:00
+Collecting js2py
+Downloading Js2Py-0.74-py3-none-any.whl (1.0 MB)
+--- 1.0/1.0 MB 241.5 kB/s eta 0:00:00
+Collecting packaging
+Downloading packaging-21.3-py3-none-any.whl (40 kB)
+--- 40.8/40.8 kB 108.6 kB/s eta 0:00:00
+Collecting pySmartDL>=1.3.1
+Downloading pySmartDL-1.3.4-py3-none-any.whl (20 kB)
+Collecting soupsieve>1.2
+Downloading soupsieve-2.3.2.post1-py3-none-any.whl (37 kB)
+Collecting tzlocal>=1.2
+Downloading tzlocal-4.2-py3-none-any.whl (19 kB)
+Collecting pyjsparser>=2.5.1
+Downloading pyjsparser-2.7.1.tar.gz (24 kB)
+Preparing metadata (setup.py) ... done
+Collecting pyparsing!=3.0.5,>=2.0.2
+Downloading pyparsing-3.0.9-py3-none-any.whl (98 kB)
+--- 98.3/98.3 kB 216.5 kB/s eta 0:00:00
+Collecting charset-normalizer<3,>=2
+Downloading charset_normalizer-2.1.1-py3-none-any.whl (39 kB)
+Collecting idna<4,>=2.5
+Downloading idna-3.4-py3-none-any.whl (61 kB)
+--- 61.5/61.5 kB 272.9 kB/s eta 0:00:00
+Collecting urllib3<1.27,>=1.21.1
+Downloading urllib3-1.26.13-py2.py3-none-any.whl (140 kB)
+--- 140.6/140.6 kB 277.9 kB/s eta 0:00:00
+Collecting certifi>=2017.4.17
+Downloading certifi-2022.9.24-py3-none-any.whl (161 kB)
+--- 161.1/161.1 kB 293.0 kB/s eta 0:00:00
+Collecting pytz-deprecation-shim
+Downloading pytz_deprecation_shim-0.1.0.post0-py2.py3-none-any.whl (15 kB)
+Collecting tzdata
+Downloading tzdata-2022.7-py2.py3-none-any.whl (340 kB)
+--- 340.1/340.1 kB 237.2 kB/s eta 0:00:00
+Installing collected packages: pySmartDL, pyprind, pyjsparser,
+docopt, urllib3,tzdata, soupsieve, six, pyparsing, idna,
+charset-normalizer, certifi, requests,pytz-deprecation-shim,
+packaging, beautifulsoup4, tzlocal, js2py, pipwin
+DEPRECATION: pyjsparser is being installed using the legacy
+'setup.py install' method, because it does not have a 
+'pyproject.toml' and the 'wheel' package is not installed.
+pip 23.1 will enforce this behaviour change. A possible replaceme
+nt is to enable the '--use-pep517' option. Discussion can be found at https://gi
+thub.com/pypa/pip/issues/8559
+Running setup.py install for pyjsparser ... done
+DEPRECATION: docopt is being installed using the legacy 'setup.py
+install' method, because it does not have a 'pyproject.toml' 
+and the 'wheel' package is not installed. pip 23.1 will enforce 
+this behaviour change. A possible replacement is 
+to enable the '--use-pep517' option. Discussion can be found
+at https://github.com/pypa/pip/issues/8559
+  Running setup.py install for docopt ... done
+DEPRECATION: pipwin is being installed using the legacy 'setup.py
+install' method, because it does not have a 'pyproject.toml'
+and the 'wheel' package is not installed. 
+pip 23.1 will enforce this behaviour change.
+A possible replacement is to enable the '--use-pep517' option.
+Discussion can be found at https://github.com/pypa/pip/issues/8559
+Running setup.py install for pipwin ... done
+Successfully installed beautifulsoup4-4.11.1 
+certifi-2022.9.24 charset-normalize
+r-2.1.1 docopt-0.6.2 idna-3.4 js2py-0.74 packaging-21.3 
+pipwin-0.5.2 pySmartDL-1
+.3.4 pyjsparser-2.7.1 pyparsing-3.0.9 pyprind-2.11.3 
+pytz-deprecation-shim-0.1.0.post0 
+requests-2.28.1 six-1.16.0 soupsieve-2.3.2.post1 
+tzdata-2022.7 tzlocal-4.2 urllib3-1.26.13
+
+C:\Users\urPC.path>pip install pipwin
+Requirement already satisfied: pipwin in 
+C:\Users\urPC.path\
+
+C:\Users\urPC.path>
+============================
+9===========================
+
+C:\Users\urPC.path>pipwin install pyaudio
+Building cache. Hang on . . .
+Building cache. Hang on . . .
+Done
+Package `pyaudio` found in cache
+Downloading package . . .
+https://download.lfd.uci.edu/pythonlibs/archived
+/PyAudio-0.2.11-cp311-cp311-win_amd64.whl
+PyAudio-0.2.11-cp311-cp311-win_amd64.whl
+[*] 111 kB / 111 kB @ 27 kB/s [##################] 
+[100%, 0s left]
+Processing c:\users\..\pipwin
+\pyaudio-0.2.11-cp311-cp311-win_amd64.whl
+Installing collected packages: PyAudio
+Successfully installed PyAudio-0.2.11
+
+C:\Users\urPC.path\
+=============================
+10===========================
+creat .txt file with any name you wish then:
+type and ENTER ... the list of the best libraries for
+your works ... such as me right now ...
+------------------
+tkinter
+pyQt5
+pyAutoGUI
+pytube
+pydub
+-------------------
+C:\Users\urPC.path\Desktop\pythonExercises>pip install -r 
+libList.txt.txt
+ERROR: Could not find a version that satisfies 
+the requirement tkinter (from versions: none)
+ERROR: No matching distribution found for tkinter
+
+C:\Users\urPC.path\Desktop\pythonExercises>
+
+ok >>> use this list : 
+requests
+pyQt5
+pyAutoGUI
+pytube
+pydub
+------------------
+>>>>> etc.........
+
+C:\Users\urPC.path\
+=============================
+11===========================
+you should useing google search for,
+and to find solutions which that gives you
+all what you need!! ...........
+stackflow.... etc .
+pypi.org
+=============================
+12===========================
+=============================
+13===========================
+=============================
+14===========================
+=============================
