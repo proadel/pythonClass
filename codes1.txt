@@ -235,7 +235,16 @@ thon\python311\lib\site-packages (1.3.0)
 C:\Users\urPC.path>
 =============================
 13===========================
+# to download emoji lib 
+C:\Users\\..>pip install emoji
+Collecting emoji
+Downloading emoji-2.2.0.tar.gz (240 kB)
+Preparing metadata (setup.py) ... done
+Installing collected packages: emoji
+Running setup.py install for emoji ... done
+Successfully installed emoji-2.2.0
 
+C:\Users\urPC.path>
 =============================
 14===========================
 =============================
