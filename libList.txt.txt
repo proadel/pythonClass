@@ -1,5 +1,0 @@
-requests
-pyQt5
-pyAutoGUI
-pytube
-pydub
