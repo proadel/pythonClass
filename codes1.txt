@@ -226,8 +226,16 @@ stackflow.... etc .
 pypi.org
 =============================
 12===========================
+# to work with exel files
+C:\Users\urPC.path> pip install xlwt
+Requirement already satisfied: xlwt in c:\users
+\urPC.path\appdata\local\programs\py
+thon\python311\lib\site-packages (1.3.0)
+
+C:\Users\urPC.path>
 =============================
 13===========================
+
 =============================
 14===========================
 =============================
