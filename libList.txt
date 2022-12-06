@@ -1,6 +1,8 @@
+#// C:\\..\\ pip install name_of_library
 requests
 pyQt5
 pyAutoGUI
 pytube
 pydub
 xlwt
+emoji
