@@ -246,5 +246,17 @@ Successfully installed emoji-2.2.0
 
 C:\Users\urPC.path>
 =============================
-14===========================
+13===========================
+# to remove vs code extensions via cmd line
+For MAC/LINUX use: 
+//root:urPC.path>rm -rf ~/.vscode/extensions
+
+For windows use: 
+C:\Users\urPC.path> rmdir %USERPROFILE%\.vscode\extensions /s
+
+C:\Users\urPC.path>
 =============================
+14===========================
+
+=============================
+
