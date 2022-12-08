@@ -266,9 +266,18 @@ Requirement already satisfied: setuptools:
 C:\Users\urPC.path>
 =============================
 15===========================
-=============================
+# to work with gtts Lib.
+# from gtts import gTTS
+C:\Users\..>pip install gtts
+Requirement already satisfied: gtts
+
+C:\Users\urPC.path>
 =============================
 16===========================
+# to involved with WEB Browser
+C:\Users\..> pip install webbrowser
+
+C:\Users\urPC.path>
 =============================
 =============================
 17===========================
