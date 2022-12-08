@@ -257,6 +257,7 @@ C:\Users\urPC.path> rmdir %USERPROFILE%\.vscode\extensions /s
 C:\Users\urPC.path>
 =============================
 14===========================
+# to deal with Time and DATE lib
 C:\Users\..>pip install datetime
 Collecting datetime:
 Downloading DateTime:
