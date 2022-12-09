@@ -23,7 +23,7 @@ try:
         host = 'localhost' ,
         user = 'root' ,
         passwd = '' ,
-        database = '' ,
+        database = ''
         )
     mycur = conn.cursor()
     mycur.excute()
