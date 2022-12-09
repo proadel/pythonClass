@@ -8,7 +8,7 @@ try:
         host = 'localhost' ,
         user = 'root' ,
         passwd = '' ,
-        database = 'db1py' ,
+        database = 'db1py'
         )      
     mycur = conn.cursor()
     mycur.excute("CREATE TABLE tablePy1 (id int primary key , name varchar(50))")
