@@ -1,4 +1,5 @@
 # DATABASE mysql.py
+# create database file by Python codes
 #---------------------------------------------------
 import mysql.connector
 try:
