@@ -11,7 +11,7 @@ try:
         database = 'db1py' ,
         )      
     mycur = conn.cursor()
-    mycur.excute("CREATE TABLE tablePy1 (tablePy1id int primary key , tablePy1name varchar(50))")
+    mycur.excute("CREATE TABLE tablePy1 (id int primary key , name varchar(50))")
 except mysql.connector.Error as r:
     print (r)
 #----------------------------------------------------
