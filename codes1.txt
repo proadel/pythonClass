@@ -313,8 +313,17 @@ C:\Users\..> pip install marshal
 C:\Users\urPC.path>
 =============================
 22===========================
+#
+C:\Users\..>wmic BaseBoard get serialnumber
+SerialNumber is : XXXXXXXXXX
+
+C:\Users\urPC.path>
 =============================
 23===========================
+#
+C:\Users\..>pip install wmi
+
+C:\Users\urPC.path>
 =============================
 24===========================
 =============================
