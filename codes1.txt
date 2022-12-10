@@ -326,8 +326,19 @@ C:\Users\..>pip install wmi
 C:\Users\urPC.path>
 =============================
 24===========================
-# to make py.exe files
+# python installer lib.
+
 C:\Users\Zontes>pip install pyinstaller
+
+# to make py.exe files
+C:\Users\urPC.path\..>pyinstaller --onefile your_filename
+   -->press Enter
+   
+# to change file icon = filename.ico
+#convert img.png xxx.svg ... to ...ico
+
+C:\Users\urPC.path\..>pyinstaller --onefile --icone='name_img.ico' your_filename
+   -->press Enter
 
 C:\Users\urPC.path>
 =============================
