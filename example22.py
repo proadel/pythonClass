@@ -7,7 +7,7 @@
 #-->press Enter
 # to change file icon = filename.ico
 #convert img.png xxx.svg ... to ...ico
-#C:\Users\urPC.path\..>pyinstaller --onefile --icon='name_img.ico' your_filename
+#C:\Users\urPC.path\..>pyinstaller --onefile --icon="name_img.ico" your_filename
 #-->press Enter
 #-------------------------------------------
 #print ('Good, Your file now Run as exe')
