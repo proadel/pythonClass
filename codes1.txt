@@ -320,12 +320,16 @@ SerialNumber is : XXXXXXXXXX
 C:\Users\urPC.path>
 =============================
 23===========================
-#
+# to limit access to file
 C:\Users\..>pip install wmi
 
 C:\Users\urPC.path>
 =============================
 24===========================
+# to make py.exe files
+C:\Users\Zontes>pip install pyinstaller
+
+C:\Users\urPC.path>
 =============================
 25===========================
 =============================
