@@ -328,7 +328,7 @@ C:\Users\urPC.path>
 24===========================
 # python installer lib.
 
-C:\Users\Zontes>pip install pyinstaller
+C:\Users\..>pip install pyinstaller
 
 # to make py.exe files
 C:\Users\urPC.path\..>pyinstaller --onefile your_filename
@@ -349,23 +349,3 @@ C:\Users\urPC.path>
 27===========================
 =============================
 20===========================
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
