@@ -1,0 +1,9 @@
+-----------------------------------------------
+How to Create Your First Django Project :
+===============================================
+1. pip install django. pip install django.
+2. django-admin startproject project-name. 
+3. $ pip install -e django. 
+4. $ Django-admin.py startproject project-name. 
+5. python manage. py runserver.
+===============================================
