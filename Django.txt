@@ -1,9 +1,179 @@
------------------------------------------------
+--------------------------------------------------------------
 How to Create Your First Django Project :
-===============================================
+==============================================================
 1. pip install django. pip install django.
 2. django-admin startproject project-name. 
 3. $ pip install -e django. 
 4. $ Django-admin.py startproject project-name. 
 5. python manage. py runserver.
-===============================================
+==============================================================
+Django version 4.1.5, using settings 
+'yourProjectname.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK. = CTRL+ C to exit
+= Now you can go to browser to enter http://127.0.0.1:8000/ GO
+==============================================================
+==============================================================
+1-  to create django app 
+python manage.py startapp yourappname    ENTER
+==============================================================
+
+==============================================================
+    in yourapp folder go to urls.py enter
+---------------------------------------
+from django.urls import path
+from . import views
+urlpatterns = [
+    path('', views.index, name='index')
+]
+---------------------------------------
+Now Go to urls.py in yourProjec folder 
+---------------------------------------
+
+===============================================================
+base.html
+===============================================================
+{% include 'parts/navbar.html' %}
+
+{% block contents %}
+<h3>INDEX OF PAGE</h3>
+{% endblock contents %}
+
+{% include 'parts/footer.html' %}
+
+================================================================
+<h1>Examples of: value|Filters</h1><hr><br><br>
+<h2>=======================</h2>
+<h1>name={{name}}</h1> 
+<h2><span>age={{age}}</span></h2> 
+<h2><b>number={{number}}</b></h2> 
+
+<pre>
+    1. |capfirst
+    <span>name={{name|capfirst}}</span>
+    ====================================
+    2. |default:' ' ~ for nullValues eg;
+      when database send null value return
+
+      with not found .
+    <span>name={{name|default:'not found'}}</span>
+    =========================================
+    3. |slice:':value' ~ ': + - value:value '
+    name|slice:':-3'
+    <span>name={{name|slice:':-3'}}</span>
+    -----------------------------------------
+    name|slice:':10'
+    <span>name={{name|slice:':10'}}</span>
+    -----------------------------------------
+    name|slice:'2:10'
+    <span>name={{name|slice:'2:10'}}</span>
+    -----------------------------------------
+    number|slice:':7'
+    <span>number={{number|slice:':7'}}</span>
+    =========================================
+    4. |length
+    name|length
+    <span>name={{name|length}}</span>
+    =========================================
+    5. |add
+    name|add
+    <span>name={{name|add:'MAZEN'}}</span>
+    =========================================
+    6. |cut
+    name|cut
+    <span>name={{name|cut:'l'}}</span>
+    =========================================
+    7. |filesizeformat
+    number|filesizeformat
+    <span>number={{number|filesizeformat}}</span>
+    =========================================
+</pre>
+<h1>Examples of tags DTL</h1><hr><br><br>
+<h1>Lets Learn Django 2023 with DTL</h1><hr><br><br>
+    <h2>ID = {{ID}}</h2>
+
+{%extends 'base.html'%}
+
+============================================================
+=================== pages files config. ====================
+============================================================
+views.py
+============================================================
+
+from django.shortcuts import render
+
+def index(request):
+    return render(request, 'pages/index.html', {'ID':'001'})
+
+def about(request):
+    return render(request, 'pages/about.html')
+
+def test1_django(request):
+    X =  {'name':'abdulrahman jamal mohammed', 
+           'age':'43', 'number':'765876565465435'}
+    return render(request, 'pages/test1_django.html', X)
+
+#=========================================================
+# Create your views here.---------------------------------
+    #from django.http import HttpResponse ----------------
+    #return HttpResponse('about paage') ------------------
+    #return HttpResponse('Hello Django 2023 - index page')
+#=========================================================
+
+==========================================================
+urls.py
+==========================================================
+import django
+from django.urls import path
+from . import views
+
+urlpatterns =[
+    path('', views.index, name='index'),
+    path('about', views.about, name='about'),
+    path('test1_django', views.test1_django, name='test1_django'),
+
+]
+====================================================================
+apps.py
+============================================================
+from django.apps import AppConfig
+
+
+class PagesConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'pages'
+============================================================
+============================================================
+============================================================
+urls.py --> from project folder
+============================================================
+
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('pages.urls')),
+    #path('pages/', include('pages.urls')),
+
+============================================================
+settings.py --> project folder
+============================================================
+#1========================
+import os
+from pathlib import Path
+#2========================
+here add your apps 
+
+INSTALLED_APPS = [
+    'pages.apps.PagesConfig',
+#3===========================
+=====================================================================
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+#===================================================================
+====================================================================
+
+
