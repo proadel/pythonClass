@@ -181,15 +181,115 @@ to create navbar e.g: get the "name" of page from urls.py
 <span><a href="{% url 'index' %}">HOME</a></span>
 <span><a href="{% url 'about' %}">about</a></span>
 ==================================================================
--->
- {% load static%}
- <img src="{% static 'image/1.jpg' %}" style="width: 100px;" alt="image from base.html file">
 
-==============================================================================================
+     -->
+     <!--
+     {% load static%}
+     <img src="{% static 'image/1.jpg' %}" style="width: 100px;" alt="image from base.html file">
+     -->
+==================================================================
 
 </pre>
 
 <h1> Database  in django </h1><hr><br><br>
+<pre>
+  <!--
+  How to create Admin users
+  url = 127.0.0.1:8000/admin
+  -----------------------------------------
+  1. close server CTRL + C 
+  2. python manage.py createsuperuser   ENTER
+  ... Superuser created successfully.
+  -----------------------------------------
+  --> 
+</pre>
+<h1> Database  in django </h1><hr><br><br>
+<pre>
+  <!--
+  1. Creating new app for our new section in website
+  ===================================================
+  $ python manage.py startapp products
+  ===================================================
+  2. Add new app into settings.py 
+  INSTALLED_APPS = [
+    'products.apps.ProductsConfig',
+    'pages.apps.PagesConfig',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+  -->
+=====================================================
+3. creating urls.py file inside products folder
+=====================================================
+4. add the url path in project/urls.py
+<!--urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('pages.urls')),
+    path('products', include('products.urls')),
+    #path('pages/', include('pages.urls')),
+]
+-->
+=====================================================
+5. go to products/models.py
+<!--
+  class Product(models.Model):
+    name = models.CharField(max_length=50)
+    content = models.TextField()
+    price = models.DecimalField(max_digits=5, decimal_places=2)
+    image = models.ImageField(upload_to='productImages/%y/%m/%d')
+    active = models.BooleanField(default=True)
+    #active = models.BooleanField(default=False) in this 
+    phase the added product should be activated to be
+    viewed for users.
+-->
+=====================================================
+6. go to products folder then to products/admin.py
+ and add |  from .models import Product
+=====================================================
+7. NOW after CTRL + C 
+   1. Migrations
+     ENTER python manage.py makemigrations
+  ------------------------------------------ 
+  Migrations for 'products':
+  products\migrations\0001_initial.py
+    - Create model Product
+  ------------------------------------------
+   2. Migrate
+      ENTER python manage.py migrate
+      Operations to perform:
+      Apply all migrations: admin, auth, contenttypes, products, sessions
+      Running migrations:
+      Applying products.0001_initial... OK
+==========================================================================
+NOW go to your admin panal control to add your products
+==========================================================================
+8. add two Files inside templates
+   product.html  --> for each product
+   products.html --> for all products 
+   ++ add your extends and blocks { }
+==========================================================================
+9. go to products app folder
+   write inside views.py 
+   # Create your views here. and add your files which created in templates
 
+def product(request):
+    return render(request, 'products/product.html')
 
+def products(request):
+    return render(request, 'products/products.html')
+===========================================================================
+10. go to views.py inside app products folder
+from django.urls import path
+from . import views
 
+urlpatterns = [
+   path('', views.products, name='products'),
+   path('product', views.product, name='product'),
+]  
+===========================================================================
+    
+</pre>
