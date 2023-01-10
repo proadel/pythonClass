@@ -136,4 +136,60 @@ base.html
 <p>{{X}}</p>
 {% endfor %}
 {% endblock contents4 %}
+<!--start of example 3 -->
+<h1> Static in django </h1><hr><br><br>
+<pre>
+  1. when you recive files from the frontend then
+     go to your main project file and add
+     static folder.
+
+     <!--
+     # Static files (CSS, JavaScript, Images)
+     # https://docs.djangoproject.com/en/4.1/howto/static-files/
+     1. add STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+     2. add STATIC_URL = 'static/'
+     3. add STATICFILES_DIRS = [
+         os.path.join(BASE_DIR, 'yourprojectfile/static')
+        ]
+     4. Then go to terminal to active codes by
+       #python manage.py collectstatic 
+       #use above code to update your statics from the main static folder
+     5. {% load static %} inside base.html
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+===========================================================         
+     base.html file contents   
+===========================================================
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+{% include 'parts/navbar.html' %}
+
+{% block base-html %}
+<p style="color: yellow;">BLOCK INDEX OF base HTML page</p>
+<p><h4>Second block index of base HTML page in h4 tag</h4></p>
+{% endblock base-html %}
+
+{% include 'parts/footer.html' %}
+==================================================================
+{% comment %}
+write your comments here
+{% endcomment %}
+------------------------------------------------------------------
+{% extends 'base.html' %}
+------------------------------------------------------------------
+to create navbar e.g: get the "name" of page from urls.py
+<span><a href="{% url 'index' %}">HOME</a></span>
+<span><a href="{% url 'about' %}">about</a></span>
+==================================================================
+-->
+ {% load static%}
+ <img src="{% static 'image/1.jpg' %}" style="width: 100px;" alt="image from base.html file">
+
+==============================================================================================
+
+</pre>
+
+<h1> Database  in django </h1><hr><br><br>
+
+
 
