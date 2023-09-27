@@ -343,6 +343,10 @@ C:\Users\urPC.path\..>pyinstaller --onefile --icon="name_img.ico" your_filename
 C:\Users\urPC.path>
 =============================
 25===========================
+import requests as re
+reponse = re.get ("https://example.com")
+html = reponse.txt
+print (html)
 =============================
 26===========================
 =============================
